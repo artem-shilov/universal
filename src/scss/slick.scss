@@ -1,0 +1,56 @@
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+
+.slick-list {
+  position: relative;
+  margin-left: 90px;
+  margin-right: 70px;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 0;
+  width: 53px;
+  height: 53px;
+  z-index: 100;
+}
+
+.slick-prev {
+  left: 0;
+  background: url("../img/reasons/arrow-prev.svg") 0 0 no-repeat;
+}
+
+.slick-next {
+  right: 0;
+  background: url("../img/reasons/arrow-next.svg") 0 0 no-repeat;
+}
+
+@media (max-width: 480px) {
+  .slick-list {
+    margin: 0;
+  }
+
+  .slick-slide {
+    padding: 0 6px;
+  }
+
+  .slick-arrow {
+    width: 36px;
+    height: 36px;
+  }
+
+  .slick-prev {
+    background: url("../img/reasons/arrow-prev-mobile.svg") 0 0 no-repeat;
+    left: 15px;
+  }
+
+  .slick-next {
+    background: url("../img/reasons/arrow-next-mobile.svg") 0 0 no-repeat;
+    right: 15px;
+  }
+}
